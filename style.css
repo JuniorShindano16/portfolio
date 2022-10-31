@@ -43,6 +43,7 @@ header .profil img{
     object-fit: cover;
     width: 100px;
     height: 100px;
+    box-shadow: 5px 5px 5px 5px;
 }
 .bio{
     margin-bottom: 10px;
@@ -176,7 +177,7 @@ section .talent-items:hover,
 
 .comboradio{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-bottom: 10px;
 }
 
@@ -185,6 +186,7 @@ section .talent-items:hover,
     height: 35px;
     border-radius: 8px;
     color: #707070;
+    margin-right: 15px;
 }
 
 form div textarea{
@@ -213,4 +215,73 @@ form div textarea{
  footer{
     margin-top: 25px;
     justify-content: center;
+ }
+
+ @media screen and  (max-width :800px) {
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.profil .details{
+    display: flex;
+    flex-direction: column;
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bio p {
+    margin: 5%;
+    padding: 5px;
+}
+.bio .contact{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.bio .contact a {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+section h2,
+section p{
+    margin-left: 5%;
+}
+.talent {
+    width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+}
+.talent .talent-items{
+    width: 95%;
+}
+form {
+    margin-left: 5%;
+}
+.langues{
+    margin-right: 5%;
+}
  }
