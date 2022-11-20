@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     color: #707070;
     display: inline;
 }
